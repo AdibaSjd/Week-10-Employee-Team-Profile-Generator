@@ -7,9 +7,7 @@ const HtmlQuestions = require('./HtmlQuestions')
 
 const PageBuilder = (managers, interns, engineers) => {
 
-    let html = fs.readFileSync("./template/index.html", "utf-8");
-    if (html)
-    {
+  
        let engineerHtml = "";
         engineers.forEach(engineer => {
 
@@ -63,14 +61,39 @@ const PageBuilder = (managers, interns, engineers) => {
   </div>`;
 })
 
-html = html.replace('<!--MANAGER-->', managerHtml);
-html = html.replace('<!--ENGINEER-->', engineerHtml);
-html = html.replace('<!--INTERN-->', interHtml);
 
-fs.readFileSync("./dist/index.html", html, "utf8");
+html = 
+` <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Employee track</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+<body>
+<header>
+   <div class="title"> Employee Track</div>
+</header>
+
+<main>
+ 
+${managerHtml}
+${engineerHtml}
+${internHtml}
+  
+</main>
+</body>
+</html>`
+
+
+
+fs.writeFileSync("./dist/index.html", html, "utf8");
 
 console.log('\x1b[35mmPage Built');
  }
-}
+ 
 module.exports = PageBuilder;
 

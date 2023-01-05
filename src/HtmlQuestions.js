@@ -15,12 +15,12 @@ const engineers = [];
 //intern questions
 const doInternQuestions = () => {
     inquirer 
-    .prompt (duestions.InternQuestions)
+    .prompt (questions.doInternQuestions)
     .then((response) =>{
 
         const intern = new Intern(response.name, response.email, response.id, response.school)
 
-        intern.push(intern);
+        interns.push(intern);
 
         ListQuestions();
     })
@@ -29,12 +29,12 @@ const doInternQuestions = () => {
 //engineer questions
 const doEngineerQuestions = () => {
     inquirer 
-    .prompt (Questions.EngineerQuestions)
+    .prompt (questions.doEngineerQuestions)
     .then((response) =>{
 
         const engineer = new Engineer(response.name, response.email, response.id, response.Github)
 
-        engineer.push(engineer);
+        engineers.push(engineer);
 
         ListQuestions();
     })
@@ -43,12 +43,12 @@ const doEngineerQuestions = () => {
 //manager questions
 const doManagerQuestions = () => {
     inquirer
-    .prompt (Questions.ManagerQuestions)
+    .prompt (questions.doManagerQuestions)
     .then((response) =>{
 
         const manager = new Manager(response.name, response.email, response.id, response.officeNumber)
 
-        manager.push(manager);
+        managers.push(manager);
 
         ListQuestions();
     })
@@ -65,11 +65,13 @@ const ListQuestions = () => {
 
 
     inquirer
-    .prompt (Questions.mainMenuQuestions)
+    .prompt (questions.mainMenuQuestions)
 
     
     .then((response) =>{ 
-        switch (response.option) {
+        console.log(response)
+        switch (response.mainMenu) {
+
         case "Add a Manager":
         doManagerQuestions ()
         break;
@@ -78,7 +80,7 @@ const ListQuestions = () => {
         doEngineerQuestions()
         break;
 
-        case "Add a intern":
+        case "Add a Intern":
         doInternQuestions()
         break;
 

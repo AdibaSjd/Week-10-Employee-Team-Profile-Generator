@@ -12,28 +12,25 @@ const Intern = require("../lib/Intern");
 
 const mainMenuQuestions = [{
     
-      type: 'List',
+      type: 'list',
       name: 'mainMenu',
-      message: 'mainMenu',
-      choices: ['managers', 'interns', 'engineers', 'createTeam'],
-      filter(val) {
-        return val.toLowerCase()
-      }
-    }]
+      message: 'what would you like to do?',
+      choices: ['Add a Manager', 'Add a Intern', 'Add a Engineer', 'create Team']
+    }];
 
 
 function divert(mainMenu) {
-  if (mainMenu === 'managers') {
+  if (mainMenu === 'Add a Manager') {
     return doManagerQuestions
   }
-  if (mainMenu === 'interns') {
+  if (mainMenu === 'Add a Intern') {
     return doInternQuestions
   }
-  if (mainMenu === 'engineers') {
+  if (mainMenu === 'Add a Engineer') {
     return doEngineerQuestions
   }
-  else (mainMenu === 'createTeam')
-  return 'createTeam'
+  else (mainMenu === 'create Team')
+  return 'create Team'
 }
 divert();
 
@@ -98,11 +95,13 @@ const doEngineerQuestions = [{
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, PageBuilder (data), err => console.log(err))
   }
-function init() {
-    inquirer.prompt (mainMenuQuestions).then(answer => {
+  
+  function init() {
+   inquirer.prompt (mainMenuQuestions).then(answer => {
       console.log(answer)
       writeToFile ("index.html", answer)
     })
   }
-init();
+//init();
 
+module.exports = {doEngineerQuestions,doInternQuestions,doManagerQuestions,mainMenuQuestions}
