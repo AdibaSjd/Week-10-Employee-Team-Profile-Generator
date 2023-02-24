@@ -43,6 +43,6 @@ http://localhost:52330/dist/index.html
 
 ## MY WEB PAGE
 Final Team generated once infromation is entered into the terminal.
-![](/images/Team-maker.png)
+![](/images/Team-Gen.png)
 
 
