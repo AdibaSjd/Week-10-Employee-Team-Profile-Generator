@@ -1,4 +1,4 @@
-# WEEK-10-employee-tracker
+# Week-10-Employee-Team-Profile-Generator
 
 Customer asked for a page that allows them to take notes, save them and delete them.
 ## User Story

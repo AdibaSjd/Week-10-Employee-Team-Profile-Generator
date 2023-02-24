@@ -1,5 +1,5 @@
 {
-  "name": "employee-tracker",
+  "name": "employee-team-profile-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AdibaSjd/employee-tracker.git"
+    "url": "git+https://github.com/AdibaSjd/Week-10-Employee-Team-Profile-Generator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AdibaSjd/employee-tracker/issues"
+    "url": "https://github.com/AdibaSjd/Week-10-Employee-Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/AdibaSjd/employee-tracker#readme",
+  "homepage": "https://github.com/AdibaSjd/Week-10-Employee-Team-Profile-Generator#readme",
   "dependencies": {
     "inquirer": "^8.2.4",
     "jest": "^29.3.1"
