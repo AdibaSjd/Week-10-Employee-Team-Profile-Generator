@@ -20,7 +20,7 @@ const PageBuilder = (managers, interns, engineers) => {
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Email:${engineer.email}</li>
           <li class="list-group-item">ID:${engineer.id}</li>
-          <li class="list-group-item">GitHub${engineer.Github}</li>
+          <li class="list-group-item">GitHub:${engineer.Github}</li>
         </ul>
       </div>`;
     })
@@ -68,7 +68,7 @@ html =
 ` <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Employee track</title>
+    <title>MY TEAM</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
@@ -77,7 +77,7 @@ html =
   </head>
 <body>
 <header>
-   <div class="title"> Employee Track</div>
+   <div class="title">MY TEAM</div>
 </header>
 
 <main>
