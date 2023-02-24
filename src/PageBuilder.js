@@ -12,15 +12,15 @@ const PageBuilder = (managers, interns, engineers) => {
         engineers.forEach(engineer => {
 
             engineerHtml +=  `<div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
         <div class="card-body">
-          <h2 class="card-title">${engineer.name}</h2>
+        <h2>ENGINEER</h2>
+          <h2 class="card-title">Name:${engineer.name}</h2>
           <p class="card-text"></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${engineer.email}</li>
-          <li class="list-group-item">${engineer.id}</li>
-          <li class="list-group-item">${engineer.Github}</li>
+          <li class="list-group-item">Email:${engineer.email}</li>
+          <li class="list-group-item">ID:${engineer.id}</li>
+          <li class="list-group-item">GitHub${engineer.Github}</li>
         </ul>
       </div>`;
     })
@@ -31,15 +31,16 @@ const PageBuilder = (managers, interns, engineers) => {
         interns.forEach(intern => {
 
             internHtml += `<div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
+      
         <div class="card-body">
-          <h2 class="card-title">${intern.name}</h2>
+        <h2>INTERN</h2>
+          <h2 class="card-title">Name:${intern.name}</h2>
           <p class="card-text"></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${intern.email}</li>
-          <li class="list-group-item">${intern.id}</li>
-          <li class="list-group-item">${intern.school}</li>
+          <li class="list-group-item">Email:${intern.email}</li>
+          <li class="list-group-item">ID:${intern.id}</li>
+          <li class="list-group-item">School:${intern.school}</li>
         </ul>
       </div>`;
     })
@@ -48,15 +49,16 @@ const PageBuilder = (managers, interns, engineers) => {
     managers.forEach(manager => {
 
         managerHtml += `<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
+  
     <div class="card-body">
-      <h2 class="card-title">${manager.name}</h2>
+    <h2>MANAGER</h2>
+      <h2 class="card-title">Name:${manager.name}</h2>
       <p class="card-text"></p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">${manager.email}</li>
-      <li class="list-group-item">${manager.id}</li>
-      <li class="list-group-item">${manager.officeNumber}</li>
+      <li class="list-group-item">Email:${manager.email}</li>
+      <li class="list-group-item">ID:${manager.id}</li>
+      <li class="list-group-item">Ofiice Number:${manager.officeNumber}</li>
     </ul>
   </div>`;
 })
