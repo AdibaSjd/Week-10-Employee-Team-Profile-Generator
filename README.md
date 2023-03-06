@@ -37,9 +37,7 @@ THEN I exit the application, and the HTML is generated
 In this task I built a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 
 ## Page link
-
-http://localhost:52330/dist/index.html
-https://drive.google.com/file/d/19lMdKbDFl1NMI3e1noINaCEQ8TeZYCMp/view
+video link: https://drive.google.com/file/d/1PCFaJ4F542Y9WsZZh8Onvt-vN4OFiAgy/view
 
 
 ## MY WEB PAGE
