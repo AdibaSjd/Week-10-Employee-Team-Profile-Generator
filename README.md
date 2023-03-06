@@ -42,6 +42,6 @@ video link: https://drive.google.com/file/d/1PCFaJ4F542Y9WsZZh8Onvt-vN4OFiAgy/vi
 
 ## MY WEB PAGE
 Final Team generated once infromation is entered into the terminal.
-![](/images/Team-Gen.png)
+![](/images/Employee-Team-Gen.png)
 
 
